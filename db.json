@@ -1,0 +1,48 @@
+{
+  "departments": [
+    {
+      "name": "fgffgbddddd",
+      "id": 18
+    },
+    {
+      "name": "sdvsdvsdv1111111111",
+      "id": 21
+    },
+    {
+      "name": "111111",
+      "id": 23
+    },
+    {
+      "name": "sdvsdvsdv",
+      "id": 24
+    },
+    {
+      "name": "ИТ-6",
+      "id": 25
+    },
+    {
+      "name": "кеу",
+      "id": 26
+    }
+  ],
+  "employees": [
+    {
+      "firstName": "fgvveververv111111112",
+      "lastName": "fsgbsgbsfg11111111",
+      "departmentId": 25,
+      "id": 2
+    },
+    {
+      "lastName": "fsgbsgbsfg",
+      "firstName": "fgvveververv",
+      "id": 3,
+      "departmentId": 23
+    },
+    {
+      "firstName": "fxgbgffgfg",
+      "lastName": "fxgb",
+      "departmentId": 23,
+      "id": 7
+    }
+  ]
+}
