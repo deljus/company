@@ -26,7 +26,7 @@ export function* addDepartmentQuery(action) {
 
 export function* delDepartmentQuery(action) {
     try{
-        const response = yield call(Departments.delete, action.id);
+        yield call(Departments.delete, action.id);
         yield put(deleteDepartment(action.id));
     }
     catch(error) {

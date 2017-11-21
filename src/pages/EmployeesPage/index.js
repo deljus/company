@@ -1,6 +1,5 @@
-import { compose } from 'redux';
 import { connect } from 'react-redux';
-import { modalDepartment } from '../../core/actions';
+import { toggleModal } from '../../core/actions';
 import EmployeesPage from './EmployeesPage';
 import { employeeSelectors } from '../../core/selector'
 
@@ -9,12 +8,10 @@ const mapStateToProps = (state, props) => ({
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
-    editEmployee: id => { dispatch(modalDepartment(id))},
-    openModal: () => dispatch(modalDepartment()),
+    editEmployee: id => dispatch(toggleModal(id)),
+    openModal: () => dispatch(toggleModal()),
     getEmployees: () => dispatch({type: 'GET_EMPLOYEES'}),
     deleteEmployee: id => dispatch({type: 'DEL_EMPLOYEE', id}),
 });
 
-export default compose(
-    connect(mapStateToProps, mapDispatchToProps)
-)(EmployeesPage);
+export default connect(mapStateToProps, mapDispatchToProps)(EmployeesPage);

@@ -1,8 +1,8 @@
 import React from 'react';
-import { PageHeader, RightShift, DepartmentsTable } from '../../components';
+import { PageHeader } from '../../components';
 
 
-const NotFoundPage = ({}) => (
+const NotFoundPage = () => (
     <div>
        <PageHeader>Not Found</PageHeader>
         <div>Страница не найдена</div>

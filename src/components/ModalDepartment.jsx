@@ -6,8 +6,6 @@ const FormItem = Form.Item;
 
 class ModalDepartment extends Component {
 
-
-
     handleSubmit = (e) => {
         e.preventDefault();
 
@@ -20,6 +18,7 @@ class ModalDepartment extends Component {
             onCancel();
             form.resetFields();
         });
+
     };
 
     render() {

@@ -1,11 +1,11 @@
 import { createSelector } from 'reselect';
 
 export const employeeSelectors = createSelector(
-    state => state.departments,
     state => state.employees,
-    ( departments, employees ) => employees.map(employee => {
+    state => state.departments,
+    ( employees, departments ) => employees.map(employee => {
         return { ...employee,
-            departmentName: "11111"
+            department: departments.filter( dep => dep.id === employee.departmentId )[0]
         }
     })
 );

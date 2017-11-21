@@ -3,6 +3,8 @@ import { withRouter, Link } from 'react-router-dom';
 import { PAGES_URLS } from '../config';
 import { Layout, Menu } from 'antd';
 
+
+
 const { Header, Content, Sider } = Layout;
 
 
@@ -13,7 +15,6 @@ const MainLayout = ({ children, history }) => (
             <Menu
                 theme="dark"
                 mode="horizontal"
-                defaultSelectedKeys={['2']}
                 style={{ lineHeight: '64px' }}
             >
             </Menu>
@@ -35,7 +36,8 @@ const MainLayout = ({ children, history }) => (
                 </Menu>
             </Sider>
             <Layout style={{ padding: '0 24px 24px' }}>
-                <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
+                <Content
+                    style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
                     { children }
                 </Content>
             </Layout>

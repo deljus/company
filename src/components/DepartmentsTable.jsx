@@ -37,7 +37,6 @@ const DepartmentsTable = ({ data, editItem, deleteItem }) => {
 
     return (
         <AntdTable
-            rowKey="uid"
             dataSource={data}
             columns={columns}
             locale={{

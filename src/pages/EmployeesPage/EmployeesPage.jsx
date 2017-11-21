@@ -4,7 +4,6 @@ import { Button } from 'antd';
 import { PageHeader, RightShift, EmployeesTable } from '../../components';
 import ModalEmployees from './ModalWrapper';
 
-
 class EmployeesPage extends Component {
 
     componentDidMount(){
@@ -14,6 +13,7 @@ class EmployeesPage extends Component {
 
     render(){
         const { openModal, employees, deleteEmployee, editEmployee } = this.props;
+
         return(
             <div>
                 <PageHeader>Работники</PageHeader>

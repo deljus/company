@@ -1,21 +1,18 @@
-import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { ModalEmployees } from '../../components';
-import { modalDepartment } from '../../core/actions';
+import { toggleModal } from '../../core/actions';
 
 const mapStateToProps = (state, props) => ({
     employees: state.employees,
     departments: state.departments,
-    visible: state.modalDepartment.visible,
-    id: state.modalDepartment.id
+    visible: state.toggleModal.visible,
+    id: state.toggleModal.id
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
-    onCancel: () => dispatch(modalDepartment()),
+    onCancel: () => dispatch(toggleModal()),
     create: employee => dispatch({type: 'PUT_EMPLOYEE', employee}),
     edit: (id, employee) => dispatch({type: 'ED_EMPLOYEE', id, employee}),
 });
 
-export default compose(
-    connect(mapStateToProps, mapDispatchToProps),
-)(ModalEmployees);
+export default connect(mapStateToProps, mapDispatchToProps)(ModalEmployees);

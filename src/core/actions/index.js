@@ -1,4 +1,4 @@
-import { modalDepartment } from './modalDepartment';
+import { toggleModal } from './modalDepartment';
 import { addDepartment, addDepartments, editDepartment, deleteDepartment } from './departments';
 import { addEmployees, addEmployee, editEmployee, deleteEmployee } from './employees';
 
@@ -8,7 +8,7 @@ export {
     addDepartments,
     editDepartment,
     deleteDepartment,
-    modalDepartment,
+    toggleModal,
     addEmployees,
     addEmployee,
     editEmployee,

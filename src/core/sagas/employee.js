@@ -1,4 +1,4 @@
-import { Employees, Departments } from '../API';
+import { Employees } from '../API';
 import { put, call } from 'redux-saga/effects';
 import { message } from 'antd';
 import { addEmployees, addEmployee, editEmployee, deleteEmployee } from '../actions';
@@ -28,7 +28,7 @@ export function* addEmployeeQuery(action) {
 
 export function* delEmployeesQuery(action) {
     try{
-        const response = yield call(Employees.delete, action.id);
+        yield call(Employees.delete, action.id);
         yield put(deleteEmployee(action.id));
     }
     catch(error) {

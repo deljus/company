@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { departments } from './departments';
 import { employees } from './employees';
-import { modalDepartment } from './modalDepartment'
+import { toggleModal } from './toggleModal'
 
 export const reducer = combineReducers({
-    modalDepartment,
+    toggleModal,
     departments,
     employees
 });

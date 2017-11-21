@@ -4,7 +4,7 @@ const initState = {
     visible: false,
 };
 
-export const modalDepartment = (state = initState, action) => {
+export const toggleModal = (state = initState, action) => {
     switch (action.type) {
         case TRIGGER:
             return { visible: !state.visible, id: action.departmentId };

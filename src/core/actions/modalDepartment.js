@@ -1,5 +1,5 @@
 import { TRIGGER } from '../constants';
 
-export const modalDepartment = (departmentId) => ({
+export const toggleModal = (departmentId) => ({
     type: TRIGGER, departmentId
 });

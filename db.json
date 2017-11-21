@@ -1,48 +1,42 @@
 {
   "departments": [
     {
-      "name": "fgffgbddddd",
-      "id": 18
+      "name": "ИТ",
+      "id": 1
     },
     {
-      "name": "sdvsdvsdv1111111111",
-      "id": 21
+      "name": "Тестирования",
+      "id": 2
     },
     {
-      "name": "111111",
-      "id": 23
-    },
-    {
-      "name": "sdvsdvsdv",
-      "id": 24
-    },
-    {
-      "name": "ИТ-6",
-      "id": 25
-    },
-    {
-      "name": "кеу",
-      "id": 26
+      "name": "Мобильной разработки",
+      "id": 3
     }
   ],
   "employees": [
     {
-      "firstName": "fgvveververv111111112",
-      "lastName": "fsgbsgbsfg11111111",
-      "departmentId": 25,
+      "firstName": "Иван",
+      "lastName": "Волков",
+      "departmentId": 1,
+      "id": 1
+    },
+    {
+      "firstName": "Павел",
+      "lastName": "Морозов",
+      "departmentId": 1,
       "id": 2
     },
     {
-      "lastName": "fsgbsgbsfg",
-      "firstName": "fgvveververv",
-      "id": 3,
-      "departmentId": 23
+      "firstName": "Дима",
+      "lastName": "Медведев",
+      "departmentId": 2,
+      "id": 3
     },
     {
-      "firstName": "fxgbgffgfg",
-      "lastName": "fxgb",
-      "departmentId": 23,
-      "id": 7
+      "firstName": "Азат",
+      "lastName": "Сафиуллин",
+      "departmentId": 3,
+      "id": 4
     }
   ]
 }

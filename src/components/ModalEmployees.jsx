@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Modal, Form, Input, Button, Select } from 'antd';
+
 const Option = Select.Option;
 const FormItem = Form.Item;
 
 class ModalEmployees extends Component {
-
-
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -64,7 +63,7 @@ class ModalEmployees extends Component {
                             rules: [{required: true, message: 'Выберите департамент'}],
                         })(
                             <Select >
-                                { departments.map((d, i) => <Option key={i + d.name} value={d.id}>{d.name}</Option>) }
+                                { departments.map((dep, i) => <Option key={i + dep.name} value={dep.id}>{dep.name}</Option>) }
                             </Select>,
                         )}
                     </FormItem>

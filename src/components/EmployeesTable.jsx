@@ -16,7 +16,7 @@ const EmployeesTable = ({ data, editItem, deleteItem }) => {
         dataIndex: 'firstName',
     },  {
         title: 'Отдел',
-        dataIndex: 'departmentName',
+        render: (text, record) => (record.department && record.department.name),
     },  {
         title: 'Действия',
         render: (text, record) => (
@@ -44,7 +44,6 @@ const EmployeesTable = ({ data, editItem, deleteItem }) => {
     return (
 
     <AntdTable
-        rowKey="uid"
         dataSource={data}
         columns={columns}
         locale={{
